@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+<header> 
+    <h1>My Profile</h1>
+    <h2>Lê Sỹ Nguyên</h2>
+    <img src="DSC_3151.jpg" width="150" />
+<nav>
+    <ul>
+        <li><a href="#about">Giới thiệu bản thân</a></li>
+        <li><a href="#hobbies-skills">Sở thích và Kỹ Năng</a></li>
+        <li><a href="#schedule">Thời khóa biểu</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+</nav>
+</header>
+<hr>         
+<main>
+    <section id="about">
+        <h2>Giới thiệu bản thân</h2>
+        <article>
+            <p>Xin chào Thầy và các bạn. Tôi là Lê Sỹ Nguyên, một sinh viên đang theo học ngành Công nghệ Thông tin tại ngôi trường Đại học Sư phạm TP.HCM. Hiện đang là 1 thành viên của tập thể CNTT B, tôi rất vui khi được gặp Thầy và các bạn!</p>
+            <h3>Thông tin liên hệ: </h3>
+            <ul>
+                <li><strong>Email:</strong> lengocquyenwe@gmail.com</li>
+                <li><strong>Điện thoại:</strong> 0934061400</li>
+                <li><strong>Mạng xã hội:</strong> <a href="https://www.facebook.com/synguyen.le.771/" target="_blank">Facebook</a> | <a href="https://github.com/LeSyNguyen52/" target="_blank">GitHub</a></li>
+            </ul>
+<hr>
+    <section id="hobbies-skills"> 
+        <h2>Sở thích và Kỹ năng</h2>
+        <article>
+            <h3>Sở thích</h3>
+            <ul>
+                <li>Lập trình và tìm hiểu công nghệ mới</li>
+                <li>Chơi game(tft,lq) và đánh cờ vua</li>
+                <li>Lướt Youtube và Tiktok</li>
+            </ul>
+            <h3>Kỹ năng</h3>
+            <ul>
+                <li>Ngôn ngữ lập trình: Java, Python, C++</li>
+                <li>Phát triển web: HTML, CSS, JavaScript</li>
+                <li>Hệ điều hành: Windows, Linux</li>
+            </ul>
+        </article>
+
+    </section>
+<hr>
+    <section id="schedule">
+        <h2>Thời khóa biểu</h2>
+        <article>
+            <table border="">
+                <thead>
+                    <tr>
+                        <th>  Thứ  </th>
+                        <th >Buổi sáng</th>
+                        <th colspan="2">Buổi chiều</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>  Thứ 2  </td>
+                        <td>Thiết kế web</td>
+                        <td align="center" colspan="2">Lập trình cơ bản</td>
+                    </tr>
+                    <tr>
+                        <td>  Thứ 3  </td>
+                        <td>Triết học Mác-Lênin</td>
+                        <td align="center" colspan="2">Không có tiết</td>
+                    </tr>
+                    <tr>
+                        <td>  Thứ 4    </td>
+                        <td>Không có tiết</td>
+                        <td align="center">Lập trình cơ bản</td>
+                        <td>Cơ sở toán trong Công nghệ thông tin</td>
+                    </tr>
+                    <tr>
+                        <td>  Thứ 5  </td>
+                        <td>Toán rời rạc và ứng dụng</td>
+                        <td align="center" colspan="2">Cơ sở toán trong Công nghệ thông tin</td>
+                    </tr>
+                    <tr>
+                        <td>  Thứ 6  </td>
+                        <td >Không có tiết</td>
+                        <td align="center" colspan="2">Giáo dục thể chất 1 (Thể dục - Điền kinh)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </article>
+<hr>
+    <footer>
+
+    </section>
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <article>
+            <form action="/submit_data" method="post">
+                <div>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:___</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Tin nhắn:_</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit">Gửi</button>
+            </form>
+    </footer>
+
+
+</main>
+
+
+</body>
+</html>
