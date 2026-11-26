@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Lê Sỹ Nguyên</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <img src="images/DSC_3151.jpg" alt="Ảnh đại diện Lê Sỹ Nguyên" class="avatar">
+             
+            <div class="header-info">
+                <span class="badge">52.01.CNTT B • ĐHSP TP.HCM</span>
+                <h1>Lê Sỹ Nguyên</h1>
+                <p class="subtitle">Sinh viên ngành Công nghệ Thông tin</p>
+                <nav class="nav">
+                 <a href="../index.html" class="nav-home">← Trang chủ</a>
+                    <a href="#about">Giới thiệu</a>
+                    <a href="#hobbies-skills">Sở thích &amp; Kỹ năng</a>
+                    <a href="#schedule">Thời khóa biểu</a>
+                    <a href="#contact">Liên hệ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section id="about" class="card">
+            <h2>Giới thiệu bản thân</h2>
+            <article>
+                <p>Xin chào Thầy và các bạn. Tôi là Lê Sỹ Nguyên, một sinh viên đang theo học ngành Công nghệ Thông tin tại ngôi trường Đại học Sư phạm TP.HCM. Hiện đang là 1 thành viên của tập thể CNTT B, tôi rất vui khi được gặp Thầy và các bạn!</p>
+                <h3>Thông tin liên hệ</h3>
+                <ul class="info-list">
+                    <li><strong>Email:</strong> lengocquyenwe@gmail.com</li>
+                    <li><strong>Điện thoại:</strong> 0934061400</li>
+                    <li>
+                        <strong>Mạng xã hội:</strong>
+                        <a href="https://www.facebook.com/synguyen.le.771/" target="_blank" rel="noopener">Facebook</a>
+                        <span>•</span>
+                        <a href="https://github.com/LeSyNguyen52/" target="_blank" rel="noopener">GitHub</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="hobbies-skills" class="card">
+            <h2>Sở thích và Kỹ năng</h2>
+            <div class="two-col">
+                <article class="sub-box">
+                    <h3>Sở thích</h3>
+                    <ul class="styled-list">
+                        <li>Lập trình và tìm hiểu công nghệ mới</li>
+                        <li>Chơi game (TFT, LQ) và đánh cờ vua</li>
+                        <li>Lướt YouTube và TikTok</li>
+                    </ul>
+                </article>
+                <article class="sub-box">
+                    <h3>Kỹ năng</h3>
+                    <ul class="styled-list">
+                        <li>Ngôn ngữ lập trình: Java, Python, C++</li>
+                        <li>Phát triển web: HTML, CSS, JavaScript</li>
+                        <li>Hệ điều hành: Windows, Linux</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="schedule" class="card">
+            <h2>Thời khóa biểu</h2>
+            <div class="table-wrap">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Thứ</th>
+                            <th>Buổi sáng</th>
+                            <th colspan="2">Buổi chiều</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Thứ 2</strong></td>
+                            <td>Thiết kế web</td>
+                            <td class="center" colspan="2">Lập trình cơ bản</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thứ 3</strong></td>
+                            <td>Triết học Mác-Lênin</td>
+                            <td class="center muted" colspan="2">Không có tiết</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thứ 4</strong></td>
+                            <td class="muted">Không có tiết</td>
+                            <td class="center">Lập trình cơ bản</td>
+                            <td class="center">Cơ sở toán trong Công nghệ thông tin</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thứ 5</strong></td>
+                            <td>Toán rời rạc và ứng dụng</td>
+                            <td class="center" colspan="2">Cơ sở toán trong Công nghệ thông tin</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thứ 6</strong></td>
+                            <td class="muted">Không có tiết</td>
+                            <td class="center" colspan="2">Giáo dục thể chất 1 (Thể dục - Điền kinh)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Liên hệ</h2>
+            <form action="/submit_data" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin nhắn</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Nội dung tin nhắn..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Lê Sỹ Nguyên • Trang cá nhân trên GitHub Pages</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.65;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: #ffffff;
+    padding: 36px 0;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.header-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #e0f2fe;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.header-info h1 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    transition: background-color 0.2s ease;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.nav a.nav-home {
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.nav a.nav-home:hover {
+    background-color: #7dd3fc;
+}
+
+/* Main & Cards */
+.main-content {
+    padding: 32px 20px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 26px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #0f172a;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.card h3 {
+    font-size: 17px;
+    color: #1d4ed8;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.info-list,
+.styled-list {
+    padding-left: 20px;
+}
+
+.info-list li,
+.styled-list li {
+    margin-bottom: 6px;
+}
+
+/* Two columns for Hobbies & Skills */
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.sub-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+
+.sub-box h3 {
+    margin-top: 0;
+}
+
+/* Schedule Table */
+.table-wrap {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #cbd5e1;
+    padding: 11px 14px;
+    text-align: left;
+}
+
+.schedule-table thead th {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #eff6ff;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.muted {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 560px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #0f172a;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.btn-submit {
+    align-self: flex-start;
+    background-color: #1d4ed8;
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1e40af;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 14px;
+}
