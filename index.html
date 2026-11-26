@@ -3,355 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mộc Vị Coffee - Cà Phê Rang Mộc Nguyên Chất</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <title>NovaTech - Responsive Menu & jQuery</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
     <header class="header">
-        <div class="container header-inner">
-            <a href="#home" class="logo">Mộc Vị <span>Coffee</span></a>
+        <div class="container nav-wrapper">
+            <a href="#home" class="logo">NOVA<span>TECH</span></a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-btn" aria-label="Mở menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+            <button id="menuButton" type="button">☰ MENU</button>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Trang chủ</a></li>
-                    <li><a href="#features" class="nav-link">Đặc trưng</a></li>
-                    <li><a href="#products" class="nav-link">Thực đơn</a></li>
-                    <li><a href="#reviews" class="nav-link">Đánh giá</a></li>
-                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            <nav class="navbar">
+                <ul id="menu">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#product">PRODUCT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-
-            <a href="#contact" class="btn btn-primary btn-sm header-cta">Đặt bàn</a>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <span class="hero-tag">100% Hạt Cà Phê Nguyên Chất</span>
-                <h1 class="hero-title">Đánh Thức Giác Quan Trong Từng Giọt Cà Phê</h1>
-                <p class="hero-desc">
-                    Tận hưởng hương vị cà phê rang mộc thủ công từ vùng cao nguyên Cầu Đất và Buôn Ma Thuột trong không gian ấm cúng, yên tĩnh giữa lòng thành phố.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">Khám phá thực đơn</a>
-                    <a href="#contact" class="btn btn-outline">Đặt chỗ ngay</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Ly cà phê pha máy tại Mộc Vị Coffee">
-                <div class="hero-badge">
-                    <strong>4.9 ★</strong>
-                    <span>Hơn 1.200+ khách hàng yêu thích</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main class="container main-content">
+        <section id="home" class="hero-box">
+            <h1>Giải Pháp Công Nghệ Thông Minh</h1>
+            <p>Khám phá hệ sinh thái thiết bị số và dịch vụ phần mềm tối ưu cho doanh nghiệp hiện đại.</p>
 
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Giá trị cốt lõi</span>
-                <h2 class="section-title">Điều Tạo Nên Sự Khác Biệt</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🌱</div>
-                    <h3>Hạt Cà Phê Tuyển Chọn</h3>
-                    <p>Thu hái thủ công 100% trái chín mọng từ những nông trại đạt chuẩn tại Lâm Đồng và Đắk Lắk.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔥</div>
-                    <h3>Rang Mộc Thủ Công</h3>
-                    <p>Quy trình rang kiểm soát nhiệt độ chuẩn xác mỗi ngày, không tẩm ướp hương liệu, giữ trọn hậu vị ngọt thanh.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏡</div>
-                    <h3>Không Gian Thư Giãn</h3>
-                    <p>Thiết kế gỗ mộc kết hợp ánh sáng tự nhiên và wifi tốc độ cao, lý tưởng cho học tập, làm việc và trò chuyện.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" class="products">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Thức uống & Bánh ngọt</span>
-                <h2 class="section-title">Thực Đơn Nổi Bật</h2>
-            </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <span class="product-badge">Bán chạy</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Cà Phê Sữa Đá Mộc Vị">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cà Phê Sữa Đá Mộc Vị</h3>
-                        <p>Robusta rang đậm phối trộn sữa đặc béo ngậy, đậm đà chuẩn gu truyền thống.</p>
-                        <div class="product-bottom">
-                            <span class="price">35.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <span class="product-badge">Đặc trưng</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Bạc Xỉu Kem Muối">
-                    </div>
-                    <div class="product-info">
-                        <h3>Bạc Xỉu Kem Muối</h3>
-                        <p>Lớp kem muối biển đánh bông mịn màng hòa quyện cùng cà phê sữa tươi thơm dịu.</p>
-                        <div class="product-bottom">
-                            <span class="price">42.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <span class="product-badge">Mới</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Cold Brew Cam Sả">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cold Brew Cam Sả</h3>
-                        <p>Cà phê Arabica ủ lạnh 18 giờ kết hợp cùng cam vàng tươi và hương sả thanh mát.</p>
-                        <div class="product-bottom">
-                            <span class="price">49.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80" alt="Espresso Cầu Đất">
-                    </div>
-                    <div class="product-info">
-                        <h3>Espresso Cầu Đất</h3>
-                        <p>Chiết xuất áp suất cao từ hạt Arabica rang vừa, hương hoa quả nhẹ và lớp crema dày.</p>
-                        <div class="product-bottom">
-                            <span class="price">39.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <span class="product-badge">Yêu thích</span>
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Latte Hạt Dẻ Nướng">
-                    </div>
-                    <div class="product-info">
-                        <h3>Latte Hạt Dẻ Nướng</h3>
-                        <p>Espresso sánh mịn hòa quyện sữa tươi đánh nóng cùng siro hạt dẻ thơm bùi.</p>
-                        <div class="product-bottom">
-                            <span class="price">46.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte Uji">
-                    </div>
-                    <div class="product-info">
-                        <h3>Matcha Latte Uji</h3>
-                        <p>Bột trà xanh Nhật Bản thượng hạng đánh tay kết hợp sữa tươi thanh trùng béo nhẹ.</p>
-                        <div class="product-bottom">
-                            <span class="price">48.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" alt="Trà Đào Cam Sả Mật Ong">
-                    </div>
-                    <div class="product-info">
-                        <h3>Trà Đào Cam Sả</h3>
-                        <p>Trà đen ủ lạnh thanh khiết kết hợp đào ngâm giòn ngọt, cam vàng và mật ong rừng.</p>
-                        <div class="product-bottom">
-                            <span class="price">45.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Bánh Sừng Bò Bơ Pháp">
-                    </div>
-                    <div class="product-info">
-                        <h3>Bánh Sừng Bò Bơ Pháp</h3>
-                        <p>Nướng mới mỗi sáng với lớp vỏ ngàn lớp giòn rụm và hương bơ lạt thơm lừng.</p>
-                        <div class="product-bottom">
-                            <span class="price">35.000đ</span>
-                            <a href="#contact" class="btn-order">Đặt món</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Cảm nhận thực tế</span>
-                <h2 class="section-title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">
-                        "Cà phê ở đây thơm mùi rang mộc tự nhiên chứ không bị gắt. Mình rất thích món Bạc Xỉu Kem Muối, vị béo mặn vừa phải, uống cùng bánh sừng bò buổi sáng cực kỳ hợp."
-                    </p>
-                    <div class="review-author">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Nguyễn Minh Thư">
-                        <div>
-                            <h4>Nguyễn Minh Thư</h4>
-                            <span>Thiết kế đồ họa</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">
-                        "Không gian quán yên tĩnh, bàn ghế thoải mái và có nhiều ổ cắm điện nên cuối tuần mình thường ghé chạy deadline. Nhân viên phục vụ thân thiện và chu đáo."
-                    </p>
-                    <div class="review-author">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Trần Hoàng Nam">
-                        <div>
-                            <h4>Trần Hoàng Nam</h4>
-                            <span>Sinh viên Công nghệ thông tin</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">
-                        "Cold Brew Cam Sả giải nhiệt rất tốt vào buổi trưa. Vị chua thanh của Arabica kết hợp cam tươi dễ uống, giá cả lại rất hợp lý so với chất lượng."
-                    </p>
-                    <div class="review-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Lê Thảo Vy">
-                        <div>
-                            <h4>Lê Thảo Vy</h4>
-                            <span>Nhân viên văn phòng</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container contact-grid">
-            <div class="contact-info">
-                <span class="section-subtitle">Ghé thăm Mộc Vị</span>
-                <h2>Liên Hệ & Đặt Bàn Trước</h2>
-                <p>Hãy để lại thông tin nếu bạn muốn đặt bàn nhóm, tổ chức workshop nhỏ hoặc đặt giao cà phê tận nơi.</p>
-                <div class="info-list">
-                    <div class="info-item">
-                        <span class="info-icon">📍</span>
-                        <div>
-                            <strong>Địa chỉ quán</strong>
-                            <p>128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">⏰</span>
-                        <div>
-                            <strong>Giờ mở cửa</strong>
-                            <p>07:00 – 22:30 (Tất cả các ngày trong tuần)</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">📞</span>
-                        <div>
-                            <strong>Hotline & Email</strong>
-                            <p>0909 123 456 • hello@mocvicoffee.vn</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="control-group">
+                <button id="btnHide" class="btn btn-danger" type="button">Ẩn thông báo (hide)</button>
+                <button id="btnShow" class="btn btn-success" type="button">Hiện thông báo (show)</button>
+                <button id="btnToggle" class="btn btn-primary" type="button">Bật/Tắt chi tiết (toggle)</button>
             </div>
 
-            <form class="contact-form">
-                <h3>Gửi Yêu Cầu Đặt Chỗ</h3>
-                <div class="form-group">
-                    <label for="fullname">Họ và tên</label>
-                    <input type="text" id="fullname" placeholder="Nhập họ tên của bạn" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Số điện thoại</label>
-                    <input type="tel" id="phone" placeholder="Nhập số điện thoại liên hệ" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Nhu cầu của bạn</label>
-                    <select id="service">
-                        <option value="dat-ban">Đặt bàn học tập / làm việc</option>
-                        <option value="dat-nhom">Đặt bàn nhóm (4 - 10 người)</option>
-                        <option value="giao-hang">Đặt nước giao tận nơi</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Ghi chú thêm</label>
-                    <textarea id="message" rows="4" placeholder="Thời gian đến, số lượng khách hoặc yêu cầu món..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">Gửi thông tin</button>
-            </form>
-        </div>
-    </section>
+            <div id="promoBox" class="alert-box">
+                <strong>Ưu đãi tháng này:</strong> Giảm 20% gói triển khai hệ thống Cloud cho khách hàng đăng ký mới.
+            </div>
+
+            <div id="detailBox" class="detail-box">
+                <h3>Thông số nền tảng NovaCloud v4.0</h3>
+                <ul>
+                    <li>Tốc độ xử lý dữ liệu thời gian thực với độ trễ dưới 15ms.</li>
+                    <li>Bảo mật đa lớp đạt chuẩn ISO/IEC 27001.</li>
+                    <li>Hỗ trợ kỹ thuật trực tuyến 24/7 trên toàn quốc.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="product" class="info-grid">
+            <div class="card">
+                <h3>PRODUCT</h3>
+                <p>Thiết bị IoT, máy trạm hiệu năng cao và phần mềm quản trị doanh nghiệp.</p>
+            </div>
+            <div id="services" class="card">
+                <h3>SERVICES</h3>
+                <p>Tư vấn chuyển đổi số, thiết kế hệ thống mạng và bảo trì hạ tầng máy chủ.</p>
+            </div>
+            <div id="about" class="card">
+                <h3>ABOUT</h3>
+                <p>Đội ngũ kỹ sư công nghệ với hơn 8 năm kinh nghiệm phát triển sản phẩm số.</p>
+            </div>
+            <div id="contact" class="card">
+                <h3>CONTACT</h3>
+                <p>Email: contact@novatech.vn • Hotline: 028 3899 6868</p>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#home" class="logo footer-logo">Mộc Vị <span>Coffee</span></a>
-                    <p>Gìn giữ hương vị cà phê nguyên bản Việt Nam trong từng tách cà phê phục vụ mỗi ngày.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Điều hướng</h4>
-                    <ul>
-                        <li><a href="#home">Trang chủ</a></li>
-                        <li><a href="#features">Đặc trưng</a></li>
-                        <li><a href="#products">Thực đơn</a></li>
-                        <li><a href="#reviews">Đánh giá</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Kết nối</h4>
-                    <ul>
-                        <li><a href="#contact">Facebook Fanpage</a></li>
-                        <li><a href="#contact">Instagram</a></li>
-                        <li><a href="#contact">TikTok</a></li>
-                        <li><a href="#contact">Đặt bàn trực tuyến</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Mộc Vị Coffee. Thiết kế giao diện Responsive Web.</p>
-            </div>
-        </div>
+        <p>&copy; 2026 NovaTech. Bài thực hành Responsive Menu & jQuery.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
